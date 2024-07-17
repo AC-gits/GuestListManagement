@@ -12,7 +12,7 @@ namespace GuestListDL
     public class GuestDbData
     {
         string connectionString
-               = "Data Source =LAPTOP-VESUE4DG\\SQLEXPRESS01; Initial Catalog = GuestListManagement; Integrated Security = True;";
+               = "Data Source =DESKTOP-SB26STE\\SQLEXPRESS; Initial Catalog = GuestListManagement; Integrated Security = True;";
 
         SqlConnection sqlConnection;
 
@@ -56,7 +56,7 @@ namespace GuestListDL
         {
             int success;
 
-            string insertStatement = "INSERT INTO users VALUES (@name, @natinality, @email, @age)";
+            string insertStatement = "INSERT INTO guest VALUES (@name, @nationality, @email, @age)";
 
             SqlCommand insertCommand = new SqlCommand(insertStatement, sqlConnection);
 
@@ -77,7 +77,7 @@ namespace GuestListDL
         {
             int success;
 
-            string updateStatement = $"UPDATE users SET address = @address WHERE name = @name";
+            string updateStatement = $"UPDATE guest SET nationality = @nationality WHERE name = @name";
             SqlCommand updateCommand = new SqlCommand(updateStatement, sqlConnection);
             sqlConnection.Open();
 

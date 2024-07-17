@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestListManagement", "GuestListManagement\GuestListManagement.csproj", "{5B4C33D6-36BE-4E6B-818C-3929F03D6279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuestListManagement", "GuestListManagement\GuestListManagement.csproj", "{5B4C33D6-36BE-4E6B-818C-3929F03D6279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestListModel", "GuestListModel\GuestListModel.csproj", "{C2FF282F-5874-4802-B74E-5BC4B07E0938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuestListModel", "GuestListModel\GuestListModel.csproj", "{C2FF282F-5874-4802-B74E-5BC4B07E0938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestListBL", "GuestListBL\GuestListBL.csproj", "{8CDD7267-A26B-4DDA-BD93-F3464692E7AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuestListBL", "GuestListBL\GuestListBL.csproj", "{8CDD7267-A26B-4DDA-BD93-F3464692E7AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestListDL", "GuestListDL\GuestListDL.csproj", "{78FEBCCD-91A7-4430-BCED-F63626FCB2BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuestListDL", "GuestListDL\GuestListDL.csproj", "{78FEBCCD-91A7-4430-BCED-F63626FCB2BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestClient", "GuestClient\GuestClient.csproj", "{2E65F77A-D734-4E68-AD6E-BC20DA3FD982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuestClient", "GuestClient\GuestClient.csproj", "{2E65F77A-D734-4E68-AD6E-BC20DA3FD982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestListAPI", "GuestListAPI\GuestListAPI.csproj", "{DD19F65C-C1DF-4D59-B116-EB01394726BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2E65F77A-D734-4E68-AD6E-BC20DA3FD982}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E65F77A-D734-4E68-AD6E-BC20DA3FD982}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E65F77A-D734-4E68-AD6E-BC20DA3FD982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD19F65C-C1DF-4D59-B116-EB01394726BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD19F65C-C1DF-4D59-B116-EB01394726BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD19F65C-C1DF-4D59-B116-EB01394726BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD19F65C-C1DF-4D59-B116-EB01394726BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
