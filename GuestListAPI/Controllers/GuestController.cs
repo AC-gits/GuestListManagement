@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using GuestListBL;
+using GuestListModel;
+
 
 namespace GuestListAPI.Controllers
 {
@@ -46,5 +48,21 @@ namespace GuestListAPI.Controllers
 
             return new JsonResult(result);
         }
+
+        [HttpDelete]
+        public JsonResult DeleteUser(GuestListAPI.Guest request)
+        {
+
+            var userToDelete = new GuestListModel.Guest
+            {
+                name = request.name
+
+            };
+
+            var result = _GetTransaction.DeleteUser(userToDelete);
+
+            return new JsonResult(result);
+        }
+
     }
 }

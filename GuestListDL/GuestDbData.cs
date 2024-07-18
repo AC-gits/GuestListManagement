@@ -12,7 +12,9 @@ namespace GuestListDL
     public class GuestDbData
     {
         string connectionString
-               = "Data Source =DESKTOP-SB26STE\\SQLEXPRESS; Initial Catalog = GuestListManagement; Integrated Security = True;";
+            = "Server = tcp:20.189.76.175,1433; Database = GuestListManagement; User Id = sa; Password = integ2!";
+        //= "Data Source =DESKTOP-SB26STE\\SQLEXPRESS; Initial Catalog = GuestListManagement; Integrated Security = True;"
+
 
         SqlConnection sqlConnection;
 
@@ -95,7 +97,7 @@ namespace GuestListDL
         {
             int success;
 
-            string deleteStatement = $"DELETE FROM users WHERE name = @name";
+            string deleteStatement = $"DELETE FROM guest WHERE name = @name";
             SqlCommand deleteCommand = new SqlCommand(deleteStatement, sqlConnection);
             sqlConnection.Open();
 
